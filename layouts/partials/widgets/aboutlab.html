@@ -91,10 +91,10 @@
 
     <div class="row">
 
-      {{ with $person.interests }}
+      {{ with $person.interests1 }}
       <div class="col-md-5">
-        <div class="section-subheading">{{ i18n "interests" | markdownify }}</div>
-        <ul class="ul-interests mb-0">
+        <div class="section-subheading">{{ i18n "interests1" | markdownify }}</div>
+        <ul class="ul-interests1 mb-0">
           {{ range . }}
           <li>{{ . | markdownify | emojify }}</li>
           {{ end }}
@@ -109,7 +109,7 @@
           {{ range .courses }}
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="descriptions">
+            <div class="description">
               <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
               <p class="institution">{{ .institution }}</p>
             </div>
