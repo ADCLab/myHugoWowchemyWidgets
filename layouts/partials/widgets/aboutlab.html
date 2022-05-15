@@ -91,10 +91,10 @@
 
     <div class="row">
 
-      {{ with $person.interests1 }}
+      {{ with $person.interests }}
       <div class="col-md-5">
-        <div class="section-subheading">{{ i18n "interests1" | markdownify }}</div>
-        <ul class="ul-interests1 mb-0">
+        <div class="section-subheading">{{ i18n "interests" | markdownify }}</div>
+        <ul class="ul-interests mb-0">
           {{ range . }}
           <li>{{ . | markdownify | emojify }}</li>
           {{ end }}
